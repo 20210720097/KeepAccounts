@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_bg"
+    tools:context=".StartActivity">
+
+
+    <LinearLayout
+        android:id="@+id/register_ll_un"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/start_tv_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#56FFCCCC"
+            android:gravity="center_horizontal"
+            android:text="账号："
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/regiser_et_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="#56FFCCCC"
+            android:hint="请输入手机号或邮箱"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_ll_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_ll_un"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:padding="18sp">
+
+        <TextView
+            android:id="@+id/start_tv_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#56FFCCCC"
+            android:gravity="center_horizontal"
+            android:text="@string/password"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/register_et_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="#56FFCCCC"
+            android:hint="@string/password_hint"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#56FFCCCC"
+        android:layout_margin="10dp"
+        android:text="注册"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/register_ll_pw"
+        android:textSize="18sp"
+        android:textColor="#000"/>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
